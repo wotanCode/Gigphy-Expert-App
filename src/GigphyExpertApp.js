@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AddCategory } from "./components/addCategory";
+import { AddCategory } from "./components/AddCategory";
 
 
 const GigphyExpertApp = () => {
