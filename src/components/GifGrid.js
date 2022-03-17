@@ -1,4 +1,10 @@
+import { useState, useEffect } from "react";
+
 export const GifGrid = ({category}) => {
+
+  useEffect( () => {
+    getGifs();
+  }, [])
 
   const getGifs = async() => {
     //api.giphy.com/v1/gifs/search
@@ -19,7 +25,7 @@ export const GifGrid = ({category}) => {
     
   }
 
-  getGifs();
+  //getGifs();
 
   return (
     <div>
