@@ -14,7 +14,6 @@ const GigphyExpertApp = () => {
 
       {/* <button onClick={ handleAdd }>Agregar</button> */}
       <AddCategory setCategories={ setCategories }  />
-
       <ol>
         {
           categories.map( category => 
