@@ -1,6 +1,6 @@
 # Gigphy-Expert-App
 
-webApp de practica que conecta con endpoints de Giphy para hacer busquedas de gifs animados.
+webApp de practica que conecta con endpoints de Giphy para hacer busquedas de gifs animados. Basado en el curso de Fernando Herrera - React: De cero a experto ( Hooks y MERN )
 
 ### Librerías utilizadas
 - React
