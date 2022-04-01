@@ -5,6 +5,8 @@ webApp de practica que conecta con endpoints de Giphy para hacer busquedas de gi
 ### Librerías utilizadas
 - React
 - animate.css
+- wojtekmaj / enzyme-adapter-react-17
+- enzyme-to-json
 
 ### Instrucciones.
 Para instalar y ejecutar.
@@ -12,4 +14,9 @@ Para instalar y ejecutar.
 npm install
 npm start
 ```
+
+### Enlaces de interes:
+https://github.com/wojtekmaj/enzyme-adapter-react-17
+https://www.npmjs.com/package/enzyme-to-json
+
 <img src="./readme_img/readme_01.png"/>
