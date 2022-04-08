@@ -12,6 +12,7 @@ webApp de practica que conecta con endpoints de Giphy para hacer busquedas de gi
 Para instalar y ejecutar.
 ```
 npm install
+npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
 npm start
 ```
 
