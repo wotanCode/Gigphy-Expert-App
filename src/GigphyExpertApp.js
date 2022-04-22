@@ -1,31 +1,29 @@
-import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import React, { useState } from 'react'
+import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
+export const GigphyExpertApp = ({ defaultCategories = [] }) => {
+    
+    // const [categories, setCategories] = useState(['One Punch']);
+    const [categories, setCategories] = useState( defaultCategories );
 
-const GigphyExpertApp = () => {
-  
-  const [categories, setCategories] = useState(['Dragon ball']);
+    return (
+        <>
+            <h2>GigphyExpertApp</h2>
+            <AddCategory setCategories={ setCategories } />
+            <hr />
 
-  return (
-    <>
-      <h2>GigphyExpertApp</h2>
-      <hr/>
+            <ol>
+                {
+                    categories.map( category  => (
+                        <GifGrid 
+                            key={ category }
+                            category={ category }
+                        />
+                    ))
+                }
+            </ol>
 
-      {/* <button onClick={ handleAdd }>Agregar</button> */}
-      <AddCategory setCategories={ setCategories }  />
-      <ol>
-        {
-          categories.map( category => 
-            <GifGrid
-              key={ category } 
-              category ={ category } />
-            // <li key={category}>{category}</li>
-          )
-        }
-      </ol>
-
-    </>
-  )
+        </>
+    )
 }
-export default GigphyExpertApp;
