@@ -7,7 +7,6 @@ describe('Pruebas en el componente <AddCategory />', () => {
   const setCategories = jest.fn();
   let wrapper = shallow(<AddCategory setCategories={setCategories}/>);
 
-
   beforeEach(() => {
     jest.clearAllMocks();
     wrapper = shallow(<AddCategory setCategories={setCategories}/>);
